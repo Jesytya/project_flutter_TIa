@@ -16,6 +16,13 @@ class Home extends StatelessWidget {
           child: Column(
             children: [
               ListTile(
+                title: Text("S.Coups"),
+                subtitle: Text("08 August 1995"),
+                leading: Image(
+                    image: NetworkImage(
+                        "https://i.pinimg.com/236x/2b/d9/92/2bd992b88cb069f09f7b1b0a93f5bd54.jpg")),
+              ),
+              ListTile(
                 title: Text("Mingyu"),
                 subtitle: Text("22 OKtober 2024"),
                 leading: Image(
@@ -44,11 +51,11 @@ class Home extends StatelessWidget {
                         "https://i.pinimg.com/474x/9f/2d/bf/9f2dbf6306741e7f4fec1265d4c661d2.jpg")),
               ),
               ListTile(
-                title: Text("Mingyu"),
+                title: Text("Joshua"),
                 subtitle: Text("22 OKtober 2024"),
                 leading: Image(
                     image: NetworkImage(
-                        "https://i.pinimg.com/236x/2b/d9/92/2bd992b88cb069f09f7b1b0a93f5bd54.jpg")),
+                        "https://i.pinimg.com/enabled/474x/1e/c0/69/1ec069cd8e3ce01f9fd097b1b08b0726.jpg")),
               ),
             ],
           ),
