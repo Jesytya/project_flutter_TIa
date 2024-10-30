@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart'; // wajib
 
+import 'bottomNav.dart';
 import 'home.dart';
 
 void main() {
@@ -11,6 +12,6 @@ class MyJes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Home());
+    return MaterialApp(home: BottonNav());
   }
 }
