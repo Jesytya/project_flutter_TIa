@@ -34,7 +34,7 @@ class _BottonNavState extends State<BottonNav> {
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.headset), label: "Music"),
+          BottomNavigationBarItem(icon: Icon(Icons.headset), label: "Album"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profil"),
         ],
         currentIndex: selectedIndex,
