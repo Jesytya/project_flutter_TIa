@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart'; // wajib
 
 import 'bottomNav.dart';
-import 'home.dart';
 
 void main() {
   runApp(MyJes());
