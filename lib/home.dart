@@ -26,7 +26,9 @@ class Home extends StatelessWidget {
         backgroundColor: Color(0xffa58ef6),
         leading: Icon(Icons.flutter_dash),
         title: Text("SevenTeen", style: TextStyle(fontWeight: FontWeight.bold)),
-        actions: <Widget>[Icon(Icons.more_vert)],
+        actions: <Widget>[
+          Icon(Icons.more_vert),
+        ],
       ),
       body: SingleChildScrollView(
         child: Padding(

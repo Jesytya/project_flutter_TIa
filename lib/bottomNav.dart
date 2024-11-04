@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:latihan/home.dart';
-import 'package:latihan/main.dart';
 
 import 'music.dart';
 import 'profil.dart';

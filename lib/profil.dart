@@ -45,17 +45,13 @@ class Profil extends StatelessWidget {
                 '087762615225',
                 style: TextStyle(fontSize: 16, color: Colors.grey),
               ),
-              Text(
-                '22TI009',
-                style: TextStyle(fontSize: 16, color: Colors.grey),
-              ),
               SizedBox(height: 32),
               // Edit Profile Button
               ElevatedButton(
                 onPressed: () {
                   // Action for editing profile
                   ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Edit Profile')),
+                    SnackBar(content: Text('Edit Profile Tapped')),
                   );
                 },
                 child: const Text('Edit Profile'),
