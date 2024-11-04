@@ -71,7 +71,7 @@ class AlbumCard extends StatelessWidget {
 final List<Map<String, String>> albums = [
   {
     "imageUrl":
-        "https://kprofiles.com/wp-content/uploads/2021/10/Attacca_Online_Cover-800x800.webp",
+        "https://i.pinimg.com/474x/ce/32/08/ce32087f11828ddd1b71178a6cc789f1.jpg",
     "title": "Attacca",
   },
   {
@@ -113,5 +113,10 @@ final List<Map<String, String>> albums = [
     "imageUrl":
         "https://i.pinimg.com/474x/5e/a0/44/5ea044357683c4888e862821bbbabbab.jpg",
     "title": "Face The Sun",
+  },
+  {
+    "imageUrl":
+        "https://i.pinimg.com/474x/76/d2/ae/76d2ae946ccd8e1a90a5bdaa27ce5c24.jpg",
+    "title": "Spill The Feels",
   },
 ];
