@@ -6,58 +6,106 @@ class Profil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff5f2ff),
-      appBar: AppBar(
-        backgroundColor: Color(0xffa58ef6),
-        title: Text("Profile", style: TextStyle(fontWeight: FontWeight.bold)),
-      ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              ClipOval(
-                child: Image.network(
-                  "https://i.pinimg.com/474x/a8/5c/a7/a85ca7421e56ead12cf8ef6b8cc956d3.jpg",
-                  height: 150, // Adjust image height as needed
-                  width: 150, // Make width the same as height for a circle
-                  fit: BoxFit
-                      .cover, // Ensures the image covers the circular area
+      backgroundColor: const Color(0xffF4F7FC),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          // Header dengan Gradien
+          Container(
+            width: double.infinity,
+            height: 200,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xff6A11CB), Color(0xffa58ef6)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CircleAvatar(
+                  radius: 50,
+                  backgroundImage: const NetworkImage(
+                    "https://i.pinimg.com/474x/a8/5c/a7/a85ca7421e56ead12cf8ef6b8cc956d3.jpg", // URL gambar profil
+                  ),
                 ),
-              ),
-              SizedBox(height: 16), // Add spacing
-              Text(
-                "Jesy Wintiya Wulandari",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 21),
-              ),
-              SizedBox(height: 8),
-              // User Email
-              Text(
-                'jesywintiya97@gmail.com',
-                style: TextStyle(fontSize: 16, color: Colors.grey),
-              ),
-              Text(
-                '@jesywntiya_0',
-                style: TextStyle(fontSize: 16, color: Colors.grey),
-              ),
-              Text(
-                '087762615225',
-                style: TextStyle(fontSize: 16, color: Colors.grey),
-              ),
-              SizedBox(height: 32),
-              // Edit Profile Button
-              ElevatedButton(
-                onPressed: () {
-                  // Action for editing profile
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Edit Profile Tapped')),
-                  );
-                },
-                child: const Text('Edit Profile'),
-              )
-            ],
+                const SizedBox(height: 10),
+                const Text(
+                  "Jesy Wintiya Wulandari", // Ganti dengan nama pengguna
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const Text(
+                  "jesywintiya@gmail.com", // Ganti dengan email pengguna
+                  style: TextStyle(
+                    color: Colors.white70,
+                    fontSize: 14,
+                  ),
+                ),
+              ],
+            ),
           ),
+          const SizedBox(height: 20),
+          // Informasi Profil
+          Expanded(
+            child: ListView(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              children: [
+                _buildInfoTile(
+                  icon: Icons.school,
+                  title: "School",
+                  subtitle: "The Lawrenceville School",
+                ),
+                _buildInfoTile(
+                  icon: Icons.person,
+                  title: "Nick Name",
+                  subtitle: "Tiya",
+                ),
+                _buildInfoTile(
+                  icon: Icons.contact_phone,
+                  title: "Emergency Contact",
+                  subtitle: "Jessica ",
+                ),
+                _buildInfoTile(
+                  icon: Icons.phone,
+                  title: "Emergency Number",
+                  subtitle: "+62 877 6261 5225",
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildInfoTile({
+    required IconData icon,
+    required String title,
+    required String subtitle,
+  }) {
+    return Card(
+      margin: const EdgeInsets.symmetric(vertical: 10),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      elevation: 3,
+      child: ListTile(
+        leading: CircleAvatar(
+          backgroundColor: const Color(0xffE8EAF6),
+          child: Icon(icon, color: const Color(0xff6A11CB)),
+        ),
+        title: Text(
+          title,
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+        ),
+        subtitle: Text(
+          subtitle,
+          style: const TextStyle(fontSize: 12, color: Colors.grey),
         ),
       ),
     );

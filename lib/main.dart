@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:latihan/bottomNav.dart';
+
+import 'package:latihan/bottom.dart';
 
 void main() {
   runApp(MyJes());
@@ -10,6 +11,6 @@ class MyJes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: BottonNav());
+    return MaterialApp(home: Bottom());
   }
 }
