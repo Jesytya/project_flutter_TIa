@@ -8,5 +8,5 @@ class BaseUrl {
   static String sholawat =
       "https://run.mocky.io/v3/add7c96d-1bba-4923-b931-fbaba1bdfedc";
   static String yasin =
-      "https://run.mocky.io/v3/7b54bfbc-9e29-4a6a-b898-2262232f926a";
+      "https://run.mocky.io/v3/cb80c187-3859-4974-a411-530223ffe903";
 }
