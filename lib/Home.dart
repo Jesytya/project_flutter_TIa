@@ -88,7 +88,7 @@ class Home extends StatelessWidget {
                   },
                 ),
                 _buildDashboardItem(
-                  icon: Icons.library_music,
+                  icon: Icons.menu_book,
                   label: "Yasin",
                   onTap: () {
                     Navigator.push(
