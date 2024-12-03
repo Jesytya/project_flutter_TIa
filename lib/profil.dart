@@ -58,7 +58,7 @@ class Profil extends StatelessWidget {
                 _buildInfoTile(
                   icon: Icons.school,
                   title: "School",
-                  subtitle: "The Lawrenceville School",
+                  subtitle: "Universitas Teknologi Mataram",
                 ),
                 _buildInfoTile(
                   icon: Icons.person,
@@ -68,7 +68,7 @@ class Profil extends StatelessWidget {
                 _buildInfoTile(
                   icon: Icons.contact_phone,
                   title: "Emergency Contact",
-                  subtitle: "Jessica ",
+                  subtitle: "@jesywntiya_0 ",
                 ),
                 _buildInfoTile(
                   icon: Icons.phone,
