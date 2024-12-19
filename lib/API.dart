@@ -9,4 +9,8 @@ class BaseUrl {
       "https://run.mocky.io/v3/add7c96d-1bba-4923-b931-fbaba1bdfedc";
   static String yasin =
       "https://run.mocky.io/v3/cb80c187-3859-4974-a411-530223ffe903";
+  static String login =
+      "https://6737d51f4eb22e24fca64272.mockapi.io/api/v1/user";
+  static String register =
+      "https://6737d51f4eb22e24fca64272.mockapi.io/api/v1/user";
 }
