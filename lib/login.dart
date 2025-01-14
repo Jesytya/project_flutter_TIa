@@ -5,6 +5,9 @@ import 'package:latihan/API.dart';
 import 'package:latihan/Home.dart';
 import 'package:latihan/register.dart';
 
+import 'add.dart';
+import 'bottom.dart';
+
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -29,7 +32,7 @@ class _LoginState extends State<Login> {
         if (user != null) {
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => Home()),
+            MaterialPageRoute(builder: (context) => Bottom()),
           );
         } else {
           _showDialog("Gagal", "Username atau password salah!");
@@ -166,7 +169,7 @@ class _LoginState extends State<Login> {
                     );
                   },
                   child: const Text(
-                    "Buat Akun Baru!",
+                    "Buat Akun!",
                     style: TextStyle(color: Colors.white70, fontSize: 16),
                   ),
                 ),

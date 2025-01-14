@@ -59,7 +59,7 @@ class _SholawatState extends State<Sholawat> {
                               MaterialPageRoute(
                                 builder: (context) => Swlt(
                                   judul: snapshot.data![index]['judul'],
-                                  arabic: snapshot.data![index]['arabic'],
+                                  arab: snapshot.data![index]['arabic'],
                                   latin: snapshot.data![index]['latin'],
                                   arti: snapshot.data![index]['arti'],
                                 ),

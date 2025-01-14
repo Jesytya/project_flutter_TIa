@@ -66,13 +66,13 @@ class Profil extends StatelessWidget {
                   subtitle: "Tiya",
                 ),
                 _buildInfoTile(
-                  icon: Icons.contact_phone,
-                  title: "Emergency Contact",
+                  icon: Icons.person_add_alt,
+                  title: "Instagram",
                   subtitle: "@jesywntiya_0 ",
                 ),
                 _buildInfoTile(
                   icon: Icons.phone,
-                  title: "Emergency Number",
+                  title: "Number",
                   subtitle: "+62 877 6261 5225",
                 ),
               ],

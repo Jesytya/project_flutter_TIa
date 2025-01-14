@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:latihan/Sholawat.dart';
-import 'Doa.dart';
+import 'Kisah.dart';
 import 'Dzikir.dart';
 import 'Yasin.dart';
 
@@ -29,7 +29,7 @@ class Home extends StatelessWidget {
                 children: const [
                   SizedBox(height: 40),
                   Text(
-                    "Do'a & Dzikir",
+                    "Sejarah Kisah Nabi Muhammad & Sahabat",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 28,
@@ -38,7 +38,7 @@ class Home extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   Text(
-                    "Last update: 25 Nov 2024",
+                    "Sejarah Islam",
                     style: TextStyle(
                       color: Colors.white70,
                       fontSize: 16,
@@ -59,11 +59,11 @@ class Home extends StatelessWidget {
               children: [
                 _buildDashboardItem(
                   icon: Icons.book,
-                  label: "Do'a",
+                  label: "Kisah",
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Doa()),
+                      MaterialPageRoute(builder: (context) => const Kisah()),
                     );
                   },
                 ),

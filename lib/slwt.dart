@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Swlt extends StatefulWidget {
-  final String? judul, arabic, latin, arti;
+  final String? judul, arab, latin, arti;
 
-  const Swlt({Key? key, this.judul, this.arabic, this.latin, this.arti})
+  const Swlt({Key? key, this.judul, this.arab, this.latin, this.arti})
       : super(key: key);
 
   @override
@@ -48,7 +48,7 @@ class _SwltState extends State<Swlt> {
                     // arabic section with spacing
                     const SizedBox(height: 16), // Adds space below the title
                     Text(
-                      widget.arabic ??
+                      widget.arab ??
                           "No Ayat Provided", // Fallback if ayat is null
                       textDirection: TextDirection.rtl,
                       style: const TextStyle(
